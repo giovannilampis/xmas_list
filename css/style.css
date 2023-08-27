@@ -1,0 +1,138 @@
+/* COLOR PALETTE & FONT  */
+
+:root {
+    --blue: #3535ec;
+    --dark_blue: #120945;
+    --gray: #d4d7f5;
+    --green: #306753;
+    --pink: #de7eb6;
+    --yellow: #f2ad41;
+    --white: #ffffff;
+}
+
+
+/* GENERAL*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--gray);
+    font-family: Livvic, sans-serif;
+    line-height: 1;
+}
+
+h1 {
+    color: #f2ad41;
+    padding: 16px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.header-top {
+    height: 130px;
+    background-color: #120845;
+    background-image: url('../images/lights.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.header-bottom {
+    color: var(--white);
+    height: 50px;
+    background-color: #3535ec;
+    border-radius: 0 0 15px 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.total-slot {
+    font-size: 28px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+/* MAIN */
+main {
+    padding: 8px;
+}
+
+.gift-element {
+    border: 4px solid white;
+    border-radius: 8px;
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.gift-info {
+    width: 70%;
+    padding: 8px;
+}
+
+.gift-price {
+    width: 20%;
+    padding: 8px;
+    font-weight: 700;
+}
+
+#gift-form {
+    display: flex;
+    background-color: var(--pink);
+    border-radius: 8px;
+
+}
+
+.gift-button {
+    width: 10%;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.form-fields {
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 8px;
+    justify-content: space-between;
+}
+
+input {
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+}
+
+#name-field {
+    width: calc(70% - 8px);
+}
+
+#price-field {
+    width: 30%;
+}
+
+.form-button {
+    border: none;
+    background-color: transparent;
+    color: var(--white);
+    font-size: 30px;
+    padding-right: 8px;
+}
